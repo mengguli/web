@@ -1,0 +1,67 @@
+<!-- bluetooth speaker -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Bluetooth Speaker Project</title>
+<!--     <meta charset="UTF-8">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="jquery-2.1.4.min.js"></script> -->
+  </head>
+
+  <body>
+    <h1 style="font-size:300%;font-family:courier;text-align:center;">Bluetooth Speaker</h1>
+    <p style="font-size:80%;font-family:courier;text-align:center;">The goal of this project was to design a portable Bluetooth speaker and achieve a deeper understanding in acoustical engineering.</p>
+    <p style="font-size:80%;font-family:courier;text-align:center;">This page does not explain all the steps taken in this project.</p>
+    <p style="font-size:80%;font-family:courier;text-align:center;">This project is done in cooperation with a fellow Mechanical intern, under the guidance of senior engineers.</p>
+    <hr>
+
+    <h2>Initial Concept</h2>
+	<p>The initial concept called for modular enclosure. It consists of three modules - power management, logic, driver. The power management compartment contains a rechargeable battery and a charging circuit. The logic module contains a Bluetooth module, DCDC boost circuit, audio amplification circuit, and various small components. The driver compartment contains a single driver. This design provides flexibility, which allows for variable battery capacity, different drivers and back volume. It  a cylindrical shape that is easy to hold. However, this design comes with difficulties, such as connections between modules (both ME and EE), placement of the buttons, directional sound dispersion, and porting. </p>
+	<img src="modular_speaker.png" alt="modular speaker" width="626" height="316">
+	<br>
+	<!-- PICTURE HERE FOR MODULAR_SPEAKER 626 316 -->
+	<hr>
+
+	<h2>New Design</h2>
+	<p>A simpler design was developed due to time constraint. It is a ported speaker in the shape of a rectangular prism. A vital step in the design process is choosing the right driver, since it would impact the choice of electrical components. The back volume and port geometry were finalized with tuning frequency of 80Hz.</p>
+	<img src="new_speaker_design.png" alt="new_speaker_design" width="455" height="316">
+	<br>
+	<!-- PICTURE HERE FOR NEW_SPEAKER_DESIGN 455 316 -->
+	<hr>
+
+	<h2>Electrical Components</h2>
+	<p>The block diagram below shows the major electrical components of the Bluetooth speaker. The components were carefully selected based on calculations of power and performance requirements. </p>
+	<img src="block_diagram.png" alt="block_diagram" width="778" height="332">
+	<br>
+	<!-- PICTURE HERE FOR BLOCK_DIAGRAM 778 332 -->
+	<hr>
+	
+	<h2>Schematic and Layout</h2>
+	<p>Before drawing the schematic, I thoroughly read all the datasheet for the major parts, and created the components associated with them in the Orcad library. After many review sessions with the senior engineers, the schematic was finalized and I generated a netlist for PCB layout. The main board and button board are both two-layered PCBs with thickness of 1.6mm. Once the padstacks and footprints for all the components are created, the components are placed onto the PCBs. </p>
+	<img src="schematic_and_layout.png" alt="schematic_and_layout" width="882" height="328">
+	<br>
+	<!-- PICTURE HERE FOR SCHEMATIC_AND_LAYOUT 882 328 -->
+	<hr>
+
+	<h2>Board and System Level Bring-up</h2>
+ 	<p>Upon receiving the fabricated PCBs, I began to populate the components. It initially did not work, after rigorous debugging and troubleshooting, some design flaws were spotted and fixed. </p>
+ 	<img src="final_pcb.png" alt="final_pcb" width="571" height="250">
+	<br>
+	<!-- PICTURE HERE FOR FINAL_PCB 571 250 -->
+	<hr>
+	
+	<h2>It Works!</h2>
+	<p>A video will be coming soon.</p>
+	<img src="speaker.jpg" alt="speaker" width="711" height="400">
+	<br>
+	<!-- PICTURE HERE FOR SPEAKER 571 250 -->
+
+
+
+
+  </body>
+
+</html>

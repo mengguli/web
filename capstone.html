@@ -1,0 +1,56 @@
+<!-- capstone -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Capstone Project</title>
+<!--     <meta charset="UTF-8">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="jquery-2.1.4.min.js"></script> -->
+  </head>
+
+  <body>
+    <!-- FORSIGHT: Negotiating Obstacles for the Visually-Impaired -->
+    <h1 style="font-size:300%;font-family:courier;text-align:center;">ForSight</h1>
+    <p style="font-size:80%;font-family:courier;text-align:center;"><i><b>ForSight</i></b> is a proof-of-concept wearable prototype that is designed to be worn by visually impaired patients in an indoor environment for navigation.</p>
+    <p style="font-size:80%;font-family:courier;text-align:center;">The team is made up of seven graduating students, three software major and four mechatronics major.</p>
+    <p style="font-size:80%;font-family:courier;text-align:center;">The project was made possible thanks to the McPERG (McMaster Pediatric Eye Research Group) led by Dr. Kourosh Sabri, Grace Lee, Crystal Chan and Nida Malik.</p>
+    <hr>
+	
+	<h2>Overview</h2>
+	<p> The system consists of various components, range detection is done using ultrasonic sensors and infrared sensors, image is captured using Microsoft Kinect, and the information are processed on an Arduino and a Raspberry Pi. Communication to the user is established through Bluetooth bone conduction headphones, and processed information of the available path is continuous relayed to the user.</p>
+	<img src="overview.png" alt="overview" width="625" height="200">
+	<br>
+	<!-- INSERT PICTURE HERE FOR OVERVIEW -->
+	<hr>
+
+	<h2>The Device</h2>
+	<p>The network of sensors is shown in the diagram below. There are three ultrasonic sensors on the belt level, one stationary sensor in the middle to detect distance to obstacles directly in front, two rotating ultrasonic sensors are placed on each side to accurately detect objects on the side (this would eliminate false readings due to unwanted reflections of ultrasonic signal). An infrared sensor is also placed on the belt level, pointing downwards at 45-degree angle, to detect change in elevation (such as stairs and tripping hazards). A Microsoft Kinect is placed on the chest, and it is used for detecting hanging objects. It is also used for redundancy check, as it provides a bigger picture of the environment, both vertically and horizontally.</p>
+	<img src="device.png" alt="device" width="520" height="200">
+	<br>
+	<!-- INSERT PICTURE HERE FOR DEVICE -->
+	<hr>
+
+	<h2>Information processing</h2>
+	<p>The data retrieved by the range sensors are process on an Arduino, which is then passed onto a Raspberry Pi through Bluetooth. The Raspberry Pi also gathers and processes the information from the Microsoft Kinect, which provides a depth image using its infrared emitter and depth camera. The image is divided into three pieces and are processed in parallel (shown below).</p>
+	<img src="information_processing.png" alt="information_processing" width="730" height="200">
+	<br>
+	<!-- INSERT PICTURE HERE FOR INFORMATION_PROCESSING -->
+	<hr>
+
+	<h2>Prototype</h2>
+	<p>The processed information would then be relayed to the user through bone conduction headphones. The video below shows a demonstration of the prototype, with the right side being first person view (the audio is played through a speaker for the purpose of demonstration)</p>
+	<iframe width="666" height="500" src="https://www.youtube.com/embed/Ursdp08M_0M">
+	</iframe>
+	<!-- INSERT VIDEO https://youtu.be/Ursdp08M_0M -->
+
+
+
+
+
+  </body>
+
+
+</html>
