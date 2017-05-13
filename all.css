@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 article,
@@ -74,11 +75,6 @@ strong {
 
 dfn {
   font-style: italic;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 mark {
@@ -245,10 +241,6 @@ th {
   transition: all 0.33s ease-in-out;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a {
   font-size: 1em;
   line-height: 1.15;
@@ -266,7 +258,7 @@ li {
   text-decoration: none;
 }
 
-h1, h2.h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #7A7F82;
   font-weight: bold;
 }
