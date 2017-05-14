@@ -541,7 +541,7 @@ nav {
 
 @media (min-width: 47.5em) {
   .btn {
-    padding: 1em 3em;
+    padding: 1em;
     width: 30%;
   }
 }
@@ -586,7 +586,7 @@ nav {
 
 @media (min-width: 47.5em) {
   .btn2 {
-    padding: 1em 3em;
+    padding: 1em;
     width: 30%;
   }
 }
