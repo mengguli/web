@@ -533,7 +533,7 @@ nav {
   }
 }
 
-@media (min-width: 30em) {
+/*@media (min-width: 30em) {
   .btn {
     width: 40%;
   }
@@ -544,7 +544,7 @@ nav {
     padding: 1em;
     width: 30%;
   }
-}
+}*/
 
 @media (min-width: 63em) {
   .btn {
@@ -578,7 +578,7 @@ nav {
   }
 }
 
-@media (min-width: 30em) {
+/*@media (min-width: 30em) {
   .btn2 {
     width: 40%;
   }
@@ -589,7 +589,7 @@ nav {
     padding: 1em;
     width: 30%;
   }
-}
+}*/
 
 @media (min-width: 63em) {
   .btn2 {
