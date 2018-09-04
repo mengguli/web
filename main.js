@@ -91,6 +91,24 @@ $(document).ready(function() {
   })
 });
 
+$(document).ready(function() {
+  $('#four').on({
+    mouseenter: function(){
+      $('#img4').css("height", "75px")
+      $('#img4').css("opacity", "1")
+    }
+  })
+});
+
+$(document).ready(function() {
+  $('#five').on({
+    mouseenter: function(){
+      $('#img5').css("height", "75px")
+      $('#img5').css("opacity", "1")
+    }
+  })
+});
+
 
 // End figcaption animations
 

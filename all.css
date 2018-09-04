@@ -676,6 +676,7 @@ p.about-para {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  /*height: 1000px;*/
 }
 
 @media (min-width: 12.5em) {
@@ -764,7 +765,7 @@ img:hover {
   top: 50%;
   -webkit-transform: translateY(50%);
       -ms-transform: translateY(50%);
-          transform: translateY(50%);
+          transform: translateY(25%);
 }
 
 .grey {
