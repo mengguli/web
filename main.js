@@ -109,6 +109,15 @@ $(document).ready(function() {
   })
 });
 
+$(document).ready(function() {
+  $('#six').on({
+    mouseenter: function(){
+      $('#img6').css("height", "75px")
+      $('#img6').css("opacity", "1")
+    }
+  })
+});
+
 
 // End figcaption animations
 
